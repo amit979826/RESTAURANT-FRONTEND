@@ -18,7 +18,8 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:4000/api/v1/reservation/send", { firstName, lastName, email, date, time, phone },
+      const { data } = await axios.post("https://restaurant-backend-neon.vercel.app/api/v1/reservation/send", 
+        { firstName, lastName, email, date, time, phone },
         {
           headers: {
             "Content-Type": "application/json",

@@ -25,7 +25,6 @@ const Menu = () => {
             }
         </div>
 
-
       </div>
     </section>
   )
